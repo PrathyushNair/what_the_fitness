@@ -1,23 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Filter } from './Components/Filter';
+import { Gymlist } from './Components/Gymlist';
+import styles from "./Styles/Layout.module.css"
+import { Searchbox } from './Components/Searchbox';
+import { Fitnessexp } from './Components/Fitnessexp';
+import React from 'react';
 function App() {
+  let [gymList, setgymList] = React.useState([]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div style={{width:"100%",height:"300px",display:"flex",margin:"auto"}}>
+        <img style={{width:"100%",height:"100%"}}src="https://i.postimg.cc/KYsNGRrj/gym.png"></img>
+      </div>
+      <div style={{width:"90%", margin:"auto",marginTop:"2%"}}>
+      <Searchbox/>
+      </div>
+      <div className="mainContainer">
+        <Filter gymList={gymList} setgymList={setgymList}></Filter>
+        <Gymlist gymList={gymList} setgymList={setgymList}></Gymlist>
+      </div>
+      <Fitnessexp></Fitnessexp>
     </div>
   );
 }

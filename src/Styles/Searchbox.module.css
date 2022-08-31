@@ -1,0 +1,84 @@
+.maincontainer {
+  display: flex;
+  border: 1px solid white;
+  justify-content: space-around;
+  align-items: center;
+  height: 3rem;
+  border-radius: 10px;
+}
+.maincontainer > input {
+  width: 80%;
+  border: none;
+  outline: none;
+  color: white;
+  margin-left: -4%;
+}
+.inputRight
+{
+    display:flex;
+    justify-content:space-between;
+    width:10%;
+    gap:20px;
+    align-items:center;
+
+}
+.loc {
+  background-color: #920909;
+  color: white;
+
+  align-items: center;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width:60%;
+}
+
+@media all and (min-width: 200px) and (max-width: 699px) {
+    .maincontainer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 3rem;
+        border-radius: 10px;
+        width:100%;
+        margin:auto
+      }
+    .maincontainer > input {
+        width: 60%;
+        border: none;
+        outline: none;
+        color: white;
+        margin-left: -2%;
+      }
+    .inputRight
+{
+    display:flex;
+    justify-content:space-between;
+    width:30%;
+    gap:10px;
+    align-items:center;
+   
+}
+  }
+
+
+@media all and (min-width:700px) and (max-width:900px)
+
+{ 
+    .maincontainer > input {
+        width: 70%;
+        border: none;
+        outline: none;
+        color: white;
+      }
+    .inputRight
+{
+    display:flex;
+    justify-content:space-between;
+    width:20%;
+    gap:20px;
+    align-items:center;
+   
+}
+}

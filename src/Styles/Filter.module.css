@@ -1,0 +1,62 @@
+.filterMain {
+  text-align: left;
+  width: 25%;
+  color: white;
+}
+.selectStyle {
+  border: none;
+  background-color: #2e2e2e;
+  height: 2rem;
+  width: 90%;
+  color: grey;
+}
+.locationLogo {
+  display: flex;
+  color: grey;
+  background-color: #2e2e2e;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 5px;
+}
+.filterInput {
+  border: none;
+  background-color: #2e2e2e;
+  height: 2rem;
+}
+.filterpriceInput {
+  border: none;
+  background-color: #2e2e2e;
+  height: 2rem;
+  width: 50%;
+}
+
+@media all and (min-width: 200px) and (max-width: 699px) {
+  .filterMain {
+    text-align: none;
+    display: block;
+    width: 100%;
+   
+  }
+  
+  .selectStyle {
+    border: none;
+    background-color: #2e2e2e;
+    height: 2rem;
+    width: 50%;
+    color: grey;
+  }
+}
+
+@media all and (min-width:700px) and (max-width:900px)
+
+{ .filterMain {
+    text-align: none;
+    display: block;
+    width: 40%;
+   
+  }
+    .mapDiv 
+    {
+        height:200px
+    }
+}

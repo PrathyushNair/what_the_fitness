@@ -1,0 +1,78 @@
+.mainList {
+  width: 70%;
+  margin: auto;
+  display: grid;
+  gap: 10px;
+  height: 500px;
+  overflow-y: scroll;
+}
+
+.mainList::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+  height: 15px;
+}
+.mainList::-webkit-scrollbar-track {
+  background: black;
+}
+
+.mainList::-webkit-scrollbar-thumb {
+  background: #ff002e;
+  border-radius: 10px;
+}
+
+.mainList::-webkit-scrollbar-thumb:hover {
+  background: #ff002e;
+}
+.mapDiv {
+  background-color: rgb(19, 19, 19, 50);
+  display: flex;
+  border-radius: 5px;
+  justify-content: space-between;
+  color: white;
+  height: 300px;
+}
+.rightBox {
+  width: 60%;
+  height: 100%;
+  margin-left: 35%;
+  position: relative;
+}
+
+.booknowDiv {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  height: 2rem;
+  padding: 5px 10px 5px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #920909;
+  border-radius: 5px;
+}
+
+@media all and (min-width: 200px) and (max-width: 699px) {
+    .mainList 
+    {
+        width:100%;
+        margin-top: 2%;
+    }
+    .mapDiv 
+    {
+        height:200px
+    }
+  }
+
+
+@media all and (min-width:700px) and (max-width:900px)
+
+{ .mainList 
+    {
+        width:90%
+    }
+    .mapDiv 
+    {
+        height:250px
+    }
+}
