@@ -5,6 +5,7 @@ import styles from "./Styles/Layout.module.css"
 import { Searchbox } from './Components/Searchbox';
 import { Fitnessexp } from './Components/Fitnessexp';
 import React from 'react';
+import { Footer } from './Components/Footer';
 function App() {
   let [gymList, setgymList] = React.useState([]);
   return (
@@ -20,6 +21,7 @@ function App() {
         <Gymlist gymList={gymList} setgymList={setgymList}></Gymlist>
       </div>
       <Fitnessexp></Fitnessexp>
+      {/* <Footer/> */}
     </div>
   );
 }

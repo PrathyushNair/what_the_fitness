@@ -7,7 +7,7 @@ export const Fitnessexp = () => {
         WTF Fitness Experience?
         <div style={{ display: "flex",width:"90%",margin:"auto",gap:"10px"}}>
           <div
-            style={{ height: "150px", width: "15%", backgroundColor: "#cb3838" }}
+            style={{ height: "180px", width: "15%", backgroundColor: "#cb3838" }}
           ></div>
           <div style={{ width: "70%", fontSize: "30px",fontWeight:"200" }}>
             @ your regular gym cost?
